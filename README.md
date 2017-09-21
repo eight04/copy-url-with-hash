@@ -1,12 +1,13 @@
 Copy URL with Hash
 ==================
 
-Add a contextmenu command to copy URL with '#' anchor.
+An userscript adding a contextmenu command to copy URL with '#' anchor.
+
+![https://i.imgur.com/COoruFV.png](https://i.imgur.com/COoruFV.png)
 
 Installation
 ------------
-
-
+https://greasyfork.org/en/scripts/33385-copy-url-with-hash
 
 Changelog
 ---------
