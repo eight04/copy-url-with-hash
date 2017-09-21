@@ -1,0 +1,26 @@
+{
+  "name": "copy-url-with-hash",
+  "version": "0.0.0",
+  "description": "Add a contextmenu command to copy URL with '#' anchor",
+  "license": "MIT",
+  "author": "eight04 <eight04@gmail.com>",
+  "repository": "eight04/copy-url-with-hash",
+  "scripts": {
+    "test": "eslint *.js",
+    "preversion": "npm test",
+    "version": "npm run build && git add .",
+    "postversion": "git push --follow-tags",
+    "build": "userscript-meta -u copy-url-with-hash.user.js"
+  },
+  "private": true,
+  "devDependencies": {
+    "eslint": "^3.14.1",
+    "sync-version": "^1.0.0"
+  },
+  "userscript": {
+    "name": "Copy URL with Hash",
+    "incompatible": ["chrome", "opera", "safari"],
+    "include": ["*"],
+    "require": ["https://greasyfork.org/scripts/33034-gm-context/code/GM_context.js?version=219427"]
+  }
+}
