@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name Copy URL with Hash
-// @version 0.1.0
+// @version 0.1.1
 // @description Add a contextmenu command to copy URL with '#' anchor
 // @license MIT
 // @author eight04 <eight04@gmail.com>
