@@ -12,6 +12,10 @@ https://greasyfork.org/en/scripts/33385-copy-url-with-hash
 Changelog
 ---------
 
+* 0.1.1 (Sep 26, 2017)
+
+  - Add: support `<a>`, `<header>`.
+
 * 0.1.0 (Sep 21, 2017)
 
 	- First release.
