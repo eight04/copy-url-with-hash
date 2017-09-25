@@ -34,7 +34,7 @@
   };
   
   GM_context.add({
-    context: ["page"],
+    context: ["page", "link"],
     items: [item],
     oncontext(e) {
       hash = findHash(e.target);
@@ -57,6 +57,16 @@
         return head.id;
       }
       const anchor = head.querySelector("[id], a[name]");
+      if (anchor) {
+        return anchor.id || anchor.name;
+      }
+    }
+    const header = head.closest("header");
+    if (header) {
+      if (header.id) {
+        return header.id;
+      }
+      const anchor = header.querySelector("[id], a[name]");
       if (anchor) {
         return anchor.id || anchor.name;
       }
