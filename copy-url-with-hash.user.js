@@ -53,6 +53,9 @@
     }
     const head = node.closest("h1, h2, h3, h4, h5, h6");
     if (head) {
+      if (head.id) {
+        return head.id;
+      }
       const anchor = head.querySelector("[id], a[name]");
       if (anchor) {
         return anchor.id || anchor.name;
